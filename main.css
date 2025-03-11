@@ -80,7 +80,7 @@ section:not(:last-of-type) {
   padding-bottom: 1rem;
 }
 .preparation-time {
-  background-color: var(--color-secondary); /* Set background color to secondary */
+  background-color: hsl(330, 100%, 98%); 
   padding: 1rem;
   border-radius: 5px;
 }
