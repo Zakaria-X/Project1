@@ -17,8 +17,8 @@
 body {
   font-family: var(--font-body);
   line-height: 1.6;
-  margin: 0;
-  padding: 0;
+  margin: 8%;
+  padding: 0%;
   color: var(--color-text);
   background-color: #f3e6d8;
 }
@@ -45,6 +45,10 @@ h2 {
 ul:not(.preparation-time ul) li::marker,
 ol:not(.preparation-time ol) li::marker {
   color: var(--color-primary); /* Set marker color to primary */
+}
+/* Add space between the list item marker and the text */
+ul li, ol li {
+  padding-left: 0.5rem; /* Adjust this value to increase or decrease the space */
 }
 
 /* Container Styles */
@@ -75,7 +79,8 @@ section {
   margin-bottom: 2rem;
 }
 
-section:not(:last-of-type) {
+section:not(:last-of-type), 
+section:not(:last-of-type):not(.preparation-time) {
   border-bottom: 2px solid var(--color-secondary);
   padding-bottom: 1rem;
 }
